@@ -1,0 +1,51 @@
+###
+
+# Version 1.2.2
+- Minor visual enhancements
+
+# Version 1.2
+- Enhanced security features section
+- Passcode functionality introduced
+
+# Version 1.2
+- Application Passcode Lock implementation
+
+# Version 1.0.2
+- iOS 5.0 Deployment Target certified 
+- Minor visual enhancements
+
+# Version 1.00
+- MeansModel2.xcdatamodel
+Keeps information on Groups and Means. Relationship functionality added
+- MeansModel3.xcdatamodel
+Added favorite field in Means entity
+Added version and firsttime fields in core entity
+
+# APP TBD
+OK - Groups > add UITableViewCellAccessoryCheckmark in MeansGroupTableViewController.m
+OK - Groups > add UITableViewCellAccessoryCheckmark in GroupDetailTableViewController.m
+OK - Groups    > add default Group values
+- Groups    > add disclosure button to edit Group in GroupDetailTableViewController.m
+OK - Groups    > Remove Keyboard when tap focus is lost + Return should Save
+OK - Groups    > add blank table content background (Label of no results)
+OK - Means     > Remove Keyboard when tap focus is lost + Return should Save
+OK - Means     > add blank table content background (Label of no results)
+- Means     > add Group functionality in AddMeansTableViewController.m
+OK - Means  > remove Description (Variable1) caption in AddMeansTableViewController.m
+- Means     > add [self.navigationItem.rightBarButtonItem.enabled = NO] functionality in MeansDetailTableViewController.m
+- Means     > add Search functionality
+- Favorites > add Favorites Tab (initial TVC) [requires change in Model]
+OK - Settings  > add Settings Tab
+- Help      > add Help Tab
+- GEN_APP   > add Passcode functionality
+- GEN_APP   > add lock screen functionality if shaked
+- GEN_APP   > add Jailbrake device checks
+- GEN_APP   > add icons to Tabs
+- GEN_APP   > add icon to APP
+- GEN_APP   > add splash screen on load [?]
+
+# WEB TBD
+OK - LOGO
+OK - SITE
+OK - Twitter
+- Presentation Documentation
