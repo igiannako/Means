@@ -82,7 +82,7 @@
     // The Tab Bar
     UITabBarController *tabBarController = (UITabBarController *)self.window.rootViewController;
     
-    [[UITabBar appearance] setTintColor:[UIColor blackColor]];
+    //[[UITabBar appearance] setTintColor:[UIColor blackColor]];
     
     // The Two Navigation Controllers attached to the Tab Bar (At Tab Bar Indexes 0 and 1)
     UINavigationController *meansTableViewControllernav = [[tabBarController viewControllers] objectAtIndex:0];
@@ -101,12 +101,34 @@
     SettingsTableViewController *settingsTableViewController = [[settingsTableViewControllernav viewControllers] objectAtIndex:0];
     settingsTableViewController.managedObjectContext = self.managedObjectContext;
     
+    
     //NOTE: Be very careful to change these indexes if you change the tab order
+    
+    //[[[self.tabBarController.tabBar subviews] objectAtIndex:01 setHidden:YES];
     
     // The following stuff was commented out since we're using a Tab Bar Controller
     //UINavigationController *navigationController = (UINavigationController *)self.window.rootViewController;
     //RolesTVC *controller = (RolesTVC *)navigationController.topViewController;
     //controller.managedObjectContext = self.managedObjectContext;
+    
+    //[[UIApplication sharedApplication] setStatusBarStyle: UIStatusBarStyleDefault];
+    
+    //UIImage *navBackgroundImage = [UIImage imageNamed:@"NBBackground"];
+    //[[UINavigationBar appearance] setBackgroundImage:navBackgroundImage forBarMetrics:UIBarMetricsDefault];
+    
+    [UIApplication sharedApplication].statusBarHidden = NO;
+    //[[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleDefault];
+    
+    //
+    
+    //backbutton: 22x30 , 44x60@2x
+    /*
+    [[UIBarButtonItem appearance] setBackButtonTitlePositionAdjustment:UIOffsetMake(0, -20.f) forBarMetrics:UIBarMetricsDefault];
+    [[UIBarButtonItem appearance] setBackButtonBackgroundImage:[UIImage   imageNamed:@"back_button.png"] forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
+    
+    [[UIBarButtonItem appearance] setBackgroundImage:[UIImage imageNamed:@"normal_button.png"] forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
+    //
+    */
     return YES; // Override point for customization after application launch.
 }
 
@@ -163,7 +185,6 @@
         });
         
     }
-
     
 }
 

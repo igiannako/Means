@@ -77,7 +77,7 @@
 - (void)eraseDataSwitchChanged:(id)sender 
 {
 	if (_eraseDataSwitch.on) {
-		NSString* title = [NSString stringWithFormat:NSLocalizedString(@"All data in this app will be erased after five (%d) failed passcode attempts.", @""), [[KKPasscodeLock sharedLock] attemptsAllowed]];
+		NSString* title = [NSString stringWithFormat:NSLocalizedString(@"All data in Means will be erased after five (%d) consecutive passcode attempts.", @""), [[KKPasscodeLock sharedLock] attemptsAllowed]];
 		
 		UIActionSheet *sheet = [[UIActionSheet alloc] initWithTitle:title delegate:self cancelButtonTitle:NSLocalizedString(@"Cancel", @"") destructiveButtonTitle:NSLocalizedString(@"Enable", @"") otherButtonTitles:nil];
 		[sheet showInView:self.view];
@@ -107,7 +107,7 @@
 - (NSString *)tableView:(UITableView *)tableView titleForFooterInSection:(NSInteger)section
 {
 	if (section == 2) {
-		return [NSString stringWithFormat:NSLocalizedString(@"Erase all content in Means application after five (%d) failed passcode attempts.", @""), [[KKPasscodeLock sharedLock] attemptsAllowed]];;
+		return [NSString stringWithFormat:NSLocalizedString(@"Erase all application content in this iPhone after five failed passcode attempts in a row.", @""), [[KKPasscodeLock sharedLock] attemptsAllowed]];;
 	} else {
 		return @"";
 	}

@@ -225,7 +225,7 @@
   
 	_enterPasscodeTextField.text = @"";
 	for (int i = 0; i < kPasscodeBoxesCount; i++) {
-		[[[_boxes objectAtIndex:_currentPanel] objectAtIndex:i] setImage:[UIImage imageNamed:@"KKPasscodeLock.bundle/box_empty.png"]];
+		[[[_boxes objectAtIndex:_currentPanel] objectAtIndex:i] setImage:[UIImage imageNamed:@"box_empty.png"]];
 	}		 
 	
 	_failedAttemptsCount += 1;
@@ -278,7 +278,7 @@
                                   oldTableView.frame.size.height);
 	
 	for (int i = 0; i < kPasscodeBoxesCount; i++) {
-		[[[_boxes objectAtIndex:_currentPanel] objectAtIndex:i] setImage:[UIImage imageNamed:@"KKPasscodeLock.bundle/box_empty.png"]];
+		[[[_boxes objectAtIndex:_currentPanel] objectAtIndex:i] setImage:[UIImage imageNamed:@"box_empty.png"]];
 	}
 	
 	[UIView beginAnimations:@"" context:nil];
@@ -302,7 +302,7 @@
 	newTableView.frame = CGRectMake(oldTableView.frame.origin.x - self.view.bounds.size.width, oldTableView.frame.origin.y, oldTableView.frame.size.width, oldTableView.frame.size.height);
 	
 	for (int i = 0; i < kPasscodeBoxesCount; i++) {
-		[[[_boxes objectAtIndex:_currentPanel] objectAtIndex:i] setImage:[UIImage imageNamed:@"KKPasscodeLock.bundle/box_empty.png"]];
+		[[[_boxes objectAtIndex:_currentPanel] objectAtIndex:i] setImage:[UIImage imageNamed:@"box_empty.png"]];
 	}
 	
 	[UIView beginAnimations:@"" context:nil];
@@ -430,7 +430,7 @@
       if ([passcode isEqualToString:_setPasscodeTextField.text]) {
         _setPasscodeTextField.text = @"";
         for (int i = 0; i < kPasscodeBoxesCount; i++) {
-          [[[_boxes objectAtIndex:_currentPanel] objectAtIndex:i] setImage:[UIImage imageNamed:@"KKPasscodeLock.bundle/box_empty.png"]];
+          [[[_boxes objectAtIndex:_currentPanel] objectAtIndex:i] setImage:[UIImage imageNamed:@"box_empty.png"]];
         }		 
         _passcodeConfirmationWarningLabel.text = NSLocalizedString(@"Enter a different passcode. Cannot re-use the same passcode.", @"");
         _passcodeConfirmationWarningLabel.frame = CGRectMake(0.0, 132.0, self.view.bounds.size.width, 60.0);
@@ -538,24 +538,24 @@
 	
 	if (_mode == KKPasscodeModeSet) {
 		if ([textField isEqual:_enterPasscodeTextField]) {
-			headerLabel.text = NSLocalizedString(@"Enter your passcode", @"");
+			headerLabel.text = NSLocalizedString(@"", @""); // 1st @"Enter your passcode"
 		} else if ([textField isEqual:_setPasscodeTextField]) {
-			headerLabel.text = NSLocalizedString(@"Enter a passcode", @"");
+			headerLabel.text = NSLocalizedString(@"", @""); // 1st @"Enter a passcode"
 		} else if ([textField isEqual:_confirmPasscodeTextField]) {
-			headerLabel.text = NSLocalizedString(@"Re-enter your passcode", @"");
+			headerLabel.text = NSLocalizedString(@"", @""); // 1st @"Re-enter your passcode"
 		}
 	} else if (_mode == KKPasscodeModeDisabled) {
-		headerLabel.text = NSLocalizedString(@"Enter your passcode", @"");
+		headerLabel.text = NSLocalizedString(@"", @""); // 1st @"Enter your passcode"
 	} else if (_mode == KKPasscodeModeChange) {
 		if ([textField isEqual:_enterPasscodeTextField]) {
-			headerLabel.text = NSLocalizedString(@"Enter your old passcode", @"");
+			headerLabel.text = NSLocalizedString(@"", @""); // 1st @"Enter your old passcode"
 		} else if ([textField isEqual:_setPasscodeTextField]) {
-			headerLabel.text = NSLocalizedString(@"Enter your new passcode", @"");
+			headerLabel.text = NSLocalizedString(@"", @""); // 1st @"Enter your new passcode"
 		} else {
-			headerLabel.text = NSLocalizedString(@"Re-enter your new passcode", @"");
+			headerLabel.text = NSLocalizedString(@"", @""); // 1st @"Re-enter your new passcode"
 		}
 	} else {
-		headerLabel.text = NSLocalizedString(@"Enter your passcode", @"");
+		headerLabel.text = NSLocalizedString(@"", @""); // 1st @"Enter your passcode"
 	}
   
 	headerLabel.autoresizingMask = UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleLeftMargin;
@@ -572,7 +572,7 @@
 	CGFloat squareX = 0.0;
 	
 	for (int i = 0; i < kPasscodeBoxesCount; i++) {
-		UIImageView *square = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"KKPasscodeLock.bundle/box_empty.png"]];
+		UIImageView *square = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"box_empty.png"]];
 		square.frame = CGRectMake(squareX, 74.0, kPasscodeBoxWidth, kPasscodeBoxHeight);
 		[squareViews addObject:square];
 		squareX += 71.0;
@@ -642,9 +642,9 @@
   for (int i = 0; i < kPasscodeBoxesCount; i++) {
     UIImageView *square = [[_boxes objectAtIndex:_currentPanel] objectAtIndex:i];
     if (i < [result length]) {
-      square.image = [UIImage imageNamed:@"KKPasscodeLock.bundle/box_filled.png"];
+      square.image = [UIImage imageNamed:@"box_filled.png"];
     } else {
-      square.image = [UIImage imageNamed:@"KKPasscodeLock.bundle/box_empty.png"];
+      square.image = [UIImage imageNamed:@"box_empty.png"];
     }
   }
   

@@ -49,7 +49,15 @@
         //self.tableView.hidden = YES; // Do some stuff to hide the table
         // Do some stuff to show a label that says no results
         
-        UIImage *image = [UIImage imageNamed:@"AddMeansImage.png"];
+        UIImage *image;
+        CGFloat screenHeight = [UIScreen mainScreen].bounds.size.height;
+        if ([UIScreen mainScreen].scale == 2.f && screenHeight == 568.0f) {
+            image = [UIImage imageNamed:@"AddMeansImage-568h@2x.png"];
+        } else {
+            image = [UIImage imageNamed:@"AddMeansImage.png"];
+        }
+        
+        //UIImage *image = [UIImage imageNamed:@"AddMeansImage.png"];
         UIImageView *imageView = [[UIImageView alloc] initWithImage:image];
         
         [imageView setFrame:self.tableView.bounds];
@@ -108,7 +116,16 @@
         
         if ([[self.fetchedResultsController fetchedObjects] count] == 0) {
             NSLog(@"No results were fetched so nothing will be given to the table view");
-            UIImage *image = [UIImage imageNamed:@"AddMeansImage.png"];
+            
+            UIImage *image;
+            CGFloat screenHeight = [UIScreen mainScreen].bounds.size.height;
+            if ([UIScreen mainScreen].scale == 2.f && screenHeight == 568.0f) {
+                image = [UIImage imageNamed:@"AddMeansImage-568h@2x.png"];
+            } else {
+                image = [UIImage imageNamed:@"AddMeansImage.png"];
+            }
+            
+            //UIImage *image = [UIImage imageNamed:@"AddMeansImage.png"];
             UIImageView *imageView = [[UIImageView alloc] initWithImage:image];
             
             [imageView setFrame:self.tableView.bounds];
@@ -161,7 +178,16 @@
     
     if ([[self.fetchedResultsController fetchedObjects] count] == 0) {
         NSLog(@"No results were fetched so nothing will be given to the table view");
-        UIImage *image = [UIImage imageNamed:@"AddMeansImage.png"];
+        
+        UIImage *image;
+        CGFloat screenHeight = [UIScreen mainScreen].bounds.size.height;
+        if ([UIScreen mainScreen].scale == 2.f && screenHeight == 568.0f) {
+            image = [UIImage imageNamed:@"AddMeansImage-568h@2x.png"];
+        } else {
+            image = [UIImage imageNamed:@"AddMeansImage.png"];
+        }
+        
+        //UIImage *image = [UIImage imageNamed:@"AddMeansImage.png"];
         UIImageView *imageView = [[UIImageView alloc] initWithImage:image];
         
         [imageView setFrame:self.tableView.bounds];
@@ -187,7 +213,16 @@
     
     if ([[self.fetchedResultsController fetchedObjects] count] == 0) {
         NSLog(@"No results were fetched so nothing will be given to the table view");
-        UIImage *image = [UIImage imageNamed:@"AddMeansImage.png"];
+        
+        UIImage *image;
+        CGFloat screenHeight = [UIScreen mainScreen].bounds.size.height;
+        if ([UIScreen mainScreen].scale == 2.f && screenHeight == 568.0f) {
+            image = [UIImage imageNamed:@"AddMeansImage-568h@2x.png"];
+        } else {
+            image = [UIImage imageNamed:@"AddMeansImage.png"];
+        }
+        
+        //UIImage *image = [UIImage imageNamed:@"AddMeansImage.png"];
         UIImageView *imageView = [[UIImageView alloc] initWithImage:image];
         
         [imageView setFrame:self.tableView.bounds];

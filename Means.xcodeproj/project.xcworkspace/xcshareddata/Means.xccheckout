@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>57D9C307-7A5F-4954-BB81-93AB3A5F92E2</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Means</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>E849F64C5FFDD294847AB770D4E933EA360210C8</key>
+		<string>https://github.com/igiannako/Means.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Means.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>E849F64C5FFDD294847AB770D4E933EA360210C8</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/igiannako/Means.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>E849F64C5FFDD294847AB770D4E933EA360210C8</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>E849F64C5FFDD294847AB770D4E933EA360210C8</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Means</string>
+		</dict>
+	</array>
+</dict>
+</plist>

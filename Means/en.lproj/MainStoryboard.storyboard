@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2844" systemVersion="12C60" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="z7u-B1-P01">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="z7u-B1-P01">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1930"/>
+        <deployment defaultVersion="1792" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
     <scenes>
-        <!--Groups Table View Controller - Groups-->
+        <!--Groups Table View Controller-->
         <scene sceneID="gaB-Ub-EEZ">
             <objects>
                 <tableViewController id="iEa-Av-ocN" customClass="GroupsTableViewController" sceneMemberID="viewController">
-                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="singleLineEtched" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="UWb-um-INN">
-                        <rect key="frame" x="0.0" y="64" width="320" height="372"/>
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="UWb-um-INN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Groups Cell" id="EjJ-gq-aVi">
-                                <rect key="frame" x="0.0" y="46" width="320" height="46"/>
+                                <rect key="frame" x="0.0" y="86" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="10" y="1" width="280" height="43"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="EjJ-gq-aVi" id="lmK-iT-kZs">
+                                    <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
-                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                </view>
+                                </tableViewCellContentView>
                                 <connections>
                                     <segue destination="A9n-8I-fhL" kind="push" identifier="Group Detail Segue" id="42a-DE-j6o"/>
                                 </connections>
@@ -32,7 +32,7 @@
                         </connections>
                     </tableView>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" title="Groups" id="DHD-Ko-kII">
+                    <navigationItem key="navigationItem" id="DHD-Ko-kII">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="T2e-du-c7t">
                             <connections>
                                 <segue destination="jWS-hQ-zyH" kind="push" identifier="Add Group Segue" id="GGF-he-EIO"/>
@@ -45,28 +45,26 @@
             </objects>
             <point key="canvasLocation" x="573" y="-42"/>
         </scene>
-        <!--Add Group Table View Controller - Add Group-->
+        <!--Add Group Table View Controller-->
         <scene sceneID="wuU-Qr-Phc">
             <objects>
                 <tableViewController id="jWS-hQ-zyH" customClass="AddGroupTableViewController" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="singleLineEtched" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="jrr-zn-78k">
-                        <rect key="frame" x="0.0" y="64" width="320" height="372"/>
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="jrr-zn-78k">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <sections>
                             <tableViewSection headerTitle="Group Name" id="X0J-4W-D2l">
                                 <cells>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="lsT-Lv-loe">
-                                        <rect key="frame" x="0.0" y="46" width="320" height="46"/>
+                                        <rect key="frame" x="0.0" y="119" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="10" y="1" width="300" height="43"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="lsT-Lv-loe" id="s4Q-2H-aDS">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" clearButtonMode="unlessEditing" translatesAutoresizingMaskIntoConstraints="NO" id="l8h-WX-iIC">
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="31" id="7bF-Ab-auQ"/>
-                                                    </constraints>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" clearButtonMode="unlessEditing" translatesAutoresizingMaskIntoConstraints="NO" id="l8h-WX-iIC">
+                                                    <rect key="frame" x="20" y="7" width="280" height="31"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                                                     <connections>
@@ -74,14 +72,8 @@
                                                     </connections>
                                                 </textField>
                                             </subviews>
-                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        </view>
+                                        </tableViewCellContentView>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <constraints>
-                                            <constraint firstItem="l8h-WX-iIC" firstAttribute="top" secondItem="lsT-Lv-loe" secondAttribute="top" constant="7" id="THd-ZL-GSb"/>
-                                            <constraint firstAttribute="trailing" secondItem="l8h-WX-iIC" secondAttribute="trailing" constant="20" type="default" id="meu-aO-pJn"/>
-                                            <constraint firstItem="l8h-WX-iIC" firstAttribute="leading" secondItem="lsT-Lv-loe" secondAttribute="leading" constant="20" type="default" id="owR-co-aqa"/>
-                                        </constraints>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -91,7 +83,7 @@
                             <outlet property="delegate" destination="jWS-hQ-zyH" id="SET-8E-twR"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Add Group" id="05C-za-ybU">
+                    <navigationItem key="navigationItem" id="05C-za-ybU">
                         <barButtonItem key="rightBarButtonItem" systemItem="done" id="cQo-Sg-GDW">
                             <connections>
                                 <action selector="save:" destination="jWS-hQ-zyH" id="bKU-Df-3qB"/>
@@ -126,17 +118,21 @@
             </objects>
             <point key="canvasLocation" x="-425" y="-42"/>
         </scene>
-        <!--Navigation Controller - Groups-->
+        <!--Navigation Controller-->
         <scene sceneID="hw0-ox-YQI">
             <objects>
                 <navigationController id="Jyt-tL-cfk" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Groups" image="Groups_TabBar_v3.png" id="aFz-BX-Hbx"/>
+                    <tabBarItem key="tabBarItem" enabled="NO" title="" id="aFz-BX-Hbx"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="CBt-My-4pP">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="gSN-RL-aoW">
+                        <rect key="frame" x="0.0" y="436" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
                     <connections>
                         <segue destination="iEa-Av-ocN" kind="relationship" relationship="rootViewController" id="ZWA-Wd-60y"/>
                     </connections>
@@ -145,28 +141,26 @@
             </objects>
             <point key="canvasLocation" x="105" y="-42"/>
         </scene>
-        <!--Group Detail Table View Controller - Group-->
+        <!--Group Detail Table View Controller-->
         <scene sceneID="dPT-FB-6Hi">
             <objects>
                 <tableViewController id="A9n-8I-fhL" customClass="GroupDetailTableViewController" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="singleLineEtched" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="KiT-Wx-YRb">
-                        <rect key="frame" x="0.0" y="64" width="320" height="372"/>
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="KiT-Wx-YRb">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <sections>
                             <tableViewSection headerTitle="Group Name" id="xua-tm-EDg">
                                 <cells>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="byo-Xo-P6L">
-                                        <rect key="frame" x="0.0" y="46" width="320" height="46"/>
+                                        <rect key="frame" x="0.0" y="119" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="10" y="1" width="300" height="43"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="byo-Xo-P6L" id="KrQ-D3-SrO">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hgj-M7-sXr">
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="31" id="aOi-0v-yhq"/>
-                                                    </constraints>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hgj-M7-sXr">
+                                                    <rect key="frame" x="20" y="7" width="280" height="31"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                     <connections>
@@ -174,14 +168,8 @@
                                                     </connections>
                                                 </textField>
                                             </subviews>
-                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        </view>
+                                        </tableViewCellContentView>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <constraints>
-                                            <constraint firstItem="hgj-M7-sXr" firstAttribute="top" secondItem="byo-Xo-P6L" secondAttribute="top" constant="7" id="3bl-Co-xvv"/>
-                                            <constraint firstItem="hgj-M7-sXr" firstAttribute="leading" secondItem="byo-Xo-P6L" secondAttribute="leading" constant="20" type="default" id="UY1-Kv-qZe"/>
-                                            <constraint firstAttribute="trailing" secondItem="hgj-M7-sXr" secondAttribute="trailing" constant="20" type="default" id="xSh-to-rV7"/>
-                                        </constraints>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -191,7 +179,7 @@
                             <outlet property="delegate" destination="A9n-8I-fhL" id="KzQ-e5-LBB"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Group" id="zDu-zr-03d">
+                    <navigationItem key="navigationItem" id="zDu-zr-03d">
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="0VQ-sH-H4b">
                             <connections>
                                 <action selector="save:" destination="A9n-8I-fhL" id="mZV-Fj-4uN"/>
@@ -210,28 +198,27 @@
         <scene sceneID="Dja-zK-eSq">
             <objects>
                 <tableViewController id="hY5-ej-qVW" customClass="MeansTableViewController" sceneMemberID="viewController">
-                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="Nt1-C4-0TI">
-                        <rect key="frame" x="0.0" y="64" width="320" height="372"/>
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="Nt1-C4-0TI">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Means Cell" textLabel="95R-cd-WP5" style="IBUITableViewCellStyleDefault" id="aWY-X2-jOs">
-                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                <rect key="frame" x="0.0" y="86" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="aWY-X2-jOs" id="YNg-Jh-7pV">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="95R-cd-WP5">
-                                            <rect key="frame" x="10" y="0.0" width="300" height="43"/>
+                                            <rect key="frame" x="15" y="0.0" width="290" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
-                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </label>
                                     </subviews>
-                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                </view>
+                                </tableViewCellContentView>
                                 <connections>
                                     <segue destination="Lor-wf-3SV" kind="push" identifier="Means Detail Segue" id="ree-Ii-MRv"/>
                                 </connections>
@@ -250,33 +237,34 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
-                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Oxq-y4-jOC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="573" y="-1314"/>
         </scene>
-        <!--Add Means Table View Controller - Add Means-->
+        <!--Add Means Table View Controller - Means-->
         <scene sceneID="ng7-qe-iJ2">
             <objects>
                 <tableViewController id="VQz-sY-vQj" customClass="AddMeansTableViewController" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="singleLineEtched" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="hCz-Og-yhl">
-                        <rect key="frame" x="0.0" y="64" width="320" height="372"/>
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="hCz-Og-yhl">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <sections>
-                            <tableViewSection headerTitle="Title" footerTitle="Available categories turn automatically on when all entries are stored sucessfully" id="nNB-lc-76Q">
+                            <tableViewSection headerTitle="Title" id="nNB-lc-76Q">
                                 <cells>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="CoY-iL-wda">
-                                        <rect key="frame" x="0.0" y="46" width="320" height="45"/>
+                                        <rect key="frame" x="0.0" y="119" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="10" y="1" width="300" height="43"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="CoY-iL-wda" id="9RX-e6-nw6">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EE5-lA-cKQ">
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EE5-lA-cKQ">
+                                                    <rect key="frame" x="20" y="6" width="280" height="31"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="31" id="Swz-Mn-KZN"/>
+                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="280" id="NOs-17-VU6"/>
+                                                        <constraint firstAttribute="width" constant="280" id="OeL-cM-Aha"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
@@ -285,39 +273,39 @@
                                                     </connections>
                                                 </textField>
                                             </subviews>
-                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        </view>
+                                            <constraints>
+                                                <constraint firstItem="EE5-lA-cKQ" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="9RX-e6-nw6" secondAttribute="leading" constant="20" symbolic="YES" id="0BA-Jk-hsu"/>
+                                                <constraint firstAttribute="trailing" secondItem="EE5-lA-cKQ" secondAttribute="trailing" constant="20" symbolic="YES" id="N4S-gc-s7M"/>
+                                                <constraint firstItem="EE5-lA-cKQ" firstAttribute="top" secondItem="9RX-e6-nw6" secondAttribute="top" constant="6" id="gpV-yl-Mhl"/>
+                                                <constraint firstItem="EE5-lA-cKQ" firstAttribute="leading" secondItem="9RX-e6-nw6" secondAttribute="leading" constant="20" symbolic="YES" id="hiN-CL-IwV"/>
+                                                <constraint firstItem="EE5-lA-cKQ" firstAttribute="centerY" secondItem="9RX-e6-nw6" secondAttribute="centerY" id="jeX-ef-BTs"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="EE5-lA-cKQ" secondAttribute="trailing" constant="20" symbolic="YES" id="vM0-J1-eCm"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <constraints>
-                                            <constraint firstItem="EE5-lA-cKQ" firstAttribute="leading" secondItem="CoY-iL-wda" secondAttribute="leading" constant="20" type="default" id="EJo-D6-Vp2"/>
-                                            <constraint firstAttribute="trailing" secondItem="EE5-lA-cKQ" secondAttribute="trailing" constant="20" type="default" id="H3l-22-DBX"/>
-                                            <constraint firstItem="EE5-lA-cKQ" firstAttribute="centerY" secondItem="CoY-iL-wda" secondAttribute="centerY" type="default" id="KJC-Op-DxP"/>
-                                        </constraints>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="139" id="gKw-9m-n6g">
-                                        <rect key="frame" x="0.0" y="91" width="320" height="140"/>
+                                        <rect key="frame" x="0.0" y="163" width="320" height="139"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="10" y="0.0" width="300" height="138"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gKw-9m-n6g" id="SKm-3Q-ZNH">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="138"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y5o-7M-Emy">
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Y5o-7M-Emy">
+                                                    <rect key="frame" x="10" y="5" width="300" height="120"/>
                                                     <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="300" id="7HG-a4-Zy5"/>
-                                                        <constraint firstAttribute="height" constant="120" id="F9U-UM-pxx"/>
-                                                    </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                 </textView>
                                             </subviews>
-                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        </view>
+                                            <constraints>
+                                                <constraint firstItem="Y5o-7M-Emy" firstAttribute="leading" secondItem="SKm-3Q-ZNH" secondAttribute="leading" constant="20" symbolic="YES" id="Rvs-yg-NU9"/>
+                                                <constraint firstItem="Y5o-7M-Emy" firstAttribute="top" secondItem="SKm-3Q-ZNH" secondAttribute="top" constant="5" id="bmd-aw-vD6"/>
+                                                <constraint firstAttribute="trailing" secondItem="Y5o-7M-Emy" secondAttribute="trailing" constant="20" symbolic="YES" id="mNW-YD-3tb"/>
+                                                <constraint firstAttribute="bottom" secondItem="Y5o-7M-Emy" secondAttribute="bottom" constant="13" id="q8x-i4-dlv"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <constraints>
-                                            <constraint firstItem="Y5o-7M-Emy" firstAttribute="top" secondItem="gKw-9m-n6g" secondAttribute="top" constant="5" id="5Bi-Nq-dWt"/>
-                                            <constraint firstItem="Y5o-7M-Emy" firstAttribute="centerX" secondItem="gKw-9m-n6g" secondAttribute="centerX" type="default" id="dTp-NV-Zbn"/>
-                                        </constraints>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -327,7 +315,7 @@
                             <outlet property="delegate" destination="VQz-sY-vQj" id="0gb-Z3-ddZ"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Add Means" id="xfV-g4-cFy">
+                    <navigationItem key="navigationItem" title="Means" id="xfV-g4-cFy">
                         <barButtonItem key="rightBarButtonItem" systemItem="done" id="8xi-h2-cmX">
                             <connections>
                                 <action selector="save:" destination="VQz-sY-vQj" id="wx8-74-NRG"/>
@@ -346,8 +334,8 @@
         <!--Navigation Controller - Means-->
         <scene sceneID="Ces-gf-Zrf">
             <objects>
-                <navigationController id="oWb-jt-hbk" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Means" image="Means_TabBar.png" id="Zg4-DU-2sX"/>
+                <navigationController extendedLayoutIncludesOpaqueBars="YES" id="oWb-jt-hbk" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Means" image="Means_TabBar_v7.png" id="Zg4-DU-2sX"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="lLL-QN-ETK">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -366,24 +354,22 @@
         <scene sceneID="ZZ5-gF-agg">
             <objects>
                 <tableViewController id="Lor-wf-3SV" customClass="MeansDetailTableViewController" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="singleLineEtched" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="xWu-2s-VJL">
-                        <rect key="frame" x="0.0" y="64" width="320" height="372"/>
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="xWu-2s-VJL">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <sections>
                             <tableViewSection headerTitle="Title" id="vFX-qo-a5k">
                                 <cells>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="3Fb-EO-P8J">
-                                        <rect key="frame" x="0.0" y="46" width="320" height="45"/>
+                                        <rect key="frame" x="0.0" y="119" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="10" y="1" width="300" height="43"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3Fb-EO-P8J" id="DUP-rl-fx1">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5TB-Tb-V3C">
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="31" id="iME-9a-TTC"/>
-                                                    </constraints>
+                                                    <rect key="frame" x="20" y="6" width="280" height="31"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                     <connections>
@@ -391,56 +377,37 @@
                                                     </connections>
                                                 </textField>
                                             </subviews>
-                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        </view>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="5TB-Tb-V3C" secondAttribute="trailing" constant="20" symbolic="YES" id="6Cv-uu-bT8"/>
+                                                <constraint firstItem="5TB-Tb-V3C" firstAttribute="top" secondItem="DUP-rl-fx1" secondAttribute="top" constant="6" id="IaT-0U-cR5"/>
+                                                <constraint firstItem="5TB-Tb-V3C" firstAttribute="leading" secondItem="DUP-rl-fx1" secondAttribute="leading" constant="20" symbolic="YES" id="YPb-r8-7oF"/>
+                                                <constraint firstItem="5TB-Tb-V3C" firstAttribute="centerY" secondItem="DUP-rl-fx1" secondAttribute="centerY" id="msX-Hh-AHZ"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <constraints>
-                                            <constraint firstItem="5TB-Tb-V3C" firstAttribute="leading" secondItem="3Fb-EO-P8J" secondAttribute="leading" constant="20" type="default" id="EsJ-Ot-iNz"/>
-                                            <constraint firstItem="5TB-Tb-V3C" firstAttribute="centerY" secondItem="3Fb-EO-P8J" secondAttribute="centerY" type="default" id="aVW-Tw-VCd"/>
-                                            <constraint firstAttribute="trailing" secondItem="5TB-Tb-V3C" secondAttribute="trailing" constant="20" type="default" id="d0X-NY-80d"/>
-                                        </constraints>
                                     </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="139" id="FVj-KY-fKo">
-                                        <rect key="frame" x="0.0" y="91" width="320" height="140"/>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="156" id="FVj-KY-fKo">
+                                        <rect key="frame" x="0.0" y="163" width="320" height="156"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="10" y="0.0" width="300" height="138"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="FVj-KY-fKo" id="UYC-6c-AkA">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="155"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mnn-Io-diN">
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Mnn-Io-diN">
+                                                    <rect key="frame" x="10" y="1" width="300" height="154"/>
                                                     <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="120" id="1sY-ap-ADk"/>
-                                                        <constraint firstAttribute="width" constant="300" id="OrM-nO-cGG"/>
-                                                    </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                 </textView>
                                             </subviews>
-                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        </view>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="Mnn-Io-diN" secondAttribute="trailing" constant="20" symbolic="YES" id="3bD-zw-TCz"/>
+                                                <constraint firstItem="Mnn-Io-diN" firstAttribute="leading" secondItem="UYC-6c-AkA" secondAttribute="leading" constant="20" symbolic="YES" id="Aer-uo-ZD4"/>
+                                                <constraint firstItem="Mnn-Io-diN" firstAttribute="top" secondItem="UYC-6c-AkA" secondAttribute="top" constant="1" id="OAY-qn-UUl"/>
+                                                <constraint firstAttribute="bottom" secondItem="Mnn-Io-diN" secondAttribute="bottom" id="VWQ-DO-8dg"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <constraints>
-                                            <constraint firstItem="Mnn-Io-diN" firstAttribute="centerX" secondItem="FVj-KY-fKo" secondAttribute="centerX" type="default" id="A7w-fN-IXc"/>
-                                            <constraint firstItem="Mnn-Io-diN" firstAttribute="top" secondItem="FVj-KY-fKo" secondAttribute="top" constant="6" id="cnh-dY-5Vd"/>
-                                        </constraints>
-                                    </tableViewCell>
-                                </cells>
-                            </tableViewSection>
-                            <tableViewSection headerTitle="Group" id="tlY-RI-yre">
-                                <cells>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Means Groups Cell" id="z5B-6g-q8l">
-                                        <rect key="frame" x="0.0" y="277" width="320" height="46"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="10" y="1" width="280" height="43"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        </view>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <connections>
-                                            <segue destination="ucA-T9-bmc" kind="push" identifier="Means Group Segue" id="CRp-Ij-DKo"/>
-                                        </connections>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -459,7 +426,6 @@
                     </navigationItem>
                     <connections>
                         <outlet property="meansContentTextView" destination="Mnn-Io-diN" id="jnD-uF-uap"/>
-                        <outlet property="meansGroupTableViewCell" destination="z5B-6g-q8l" id="n3K-P2-Ix5"/>
                         <outlet property="meansTitleTextField" destination="5TB-Tb-V3C" id="art-Z7-KwQ"/>
                     </connections>
                 </tableViewController>
@@ -471,19 +437,18 @@
         <scene sceneID="obv-lI-Fte">
             <objects>
                 <tableViewController id="ucA-T9-bmc" customClass="MeansGroupTableViewController" sceneMemberID="viewController">
-                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="singleLineEtched" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="JA8-RN-gGo">
-                        <rect key="frame" x="0.0" y="64" width="320" height="372"/>
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="JA8-RN-gGo">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Means Group Cell" id="ksl-0R-lOc">
-                                <rect key="frame" x="0.0" y="46" width="320" height="46"/>
+                                <rect key="frame" x="0.0" y="55" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="10" y="1" width="300" height="43"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ksl-0R-lOc" id="2zn-j1-yFI">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
-                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                </view>
+                                </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -501,131 +466,105 @@
         <scene sceneID="OPe-ck-F2G">
             <objects>
                 <tableViewController id="C1Z-AG-4qt" customClass="SettingsTableViewController" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="singleLineEtched" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="KL8-iO-XcP">
-                        <rect key="frame" x="0.0" y="64" width="320" height="372"/>
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="KL8-iO-XcP">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <view key="tableFooterView" contentMode="scaleToFill" id="bZL-XK-ReP">
-                            <rect key="frame" x="0.0" y="351" width="320" height="52"/>
+                            <rect key="frame" x="0.0" y="406" width="320" height="52"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <subviews>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H82-xO-EPM">
-                                    <constraints>
-                                        <constraint firstAttribute="width" constant="302" id="Fy8-NF-MgR"/>
-                                    </constraints>
-                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                    <state key="normal" title="Contact">
-                                        <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                    </state>
-                                    <state key="highlighted">
-                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    </state>
-                                    <connections>
-                                        <action selector="composeMail" destination="C1Z-AG-4qt" eventType="touchUpInside" id="YHR-Bo-NCz"/>
-                                    </connections>
-                                </button>
-                            </subviews>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                            <constraints>
-                                <constraint firstItem="H82-xO-EPM" firstAttribute="top" secondItem="bZL-XK-ReP" secondAttribute="top" constant="4" id="Ky8-2a-vbj"/>
-                                <constraint firstItem="H82-xO-EPM" firstAttribute="centerX" secondItem="bZL-XK-ReP" secondAttribute="centerX" type="default" id="ggs-ZH-BGG"/>
-                            </constraints>
                         </view>
                         <sections>
                             <tableViewSection headerTitle="Application" id="Xxi-Vz-qVQ">
                                 <cells>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="jnw-Qs-q98" style="IBUITableViewCellStyleDefault" id="fl2-BT-SBd">
-                                        <rect key="frame" x="0.0" y="46" width="320" height="45"/>
+                                        <rect key="frame" x="0.0" y="119" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="10" y="1" width="280" height="43"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fl2-BT-SBd" id="MIn-84-HeC">
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="About" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="jnw-Qs-q98">
-                                                    <rect key="frame" x="10" y="0.0" width="260" height="43"/>
+                                                    <rect key="frame" x="15" y="0.0" width="270" height="43"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </label>
                                             </subviews>
-                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        </view>
+                                        </tableViewCellContentView>
                                         <connections>
                                             <segue destination="Zgb-ho-RVG" kind="push" identifier="About Segue" id="vJF-bh-faA"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="i8u-9j-3N7" style="IBUITableViewCellStyleDefault" id="lUb-ct-1zH">
-                                        <rect key="frame" x="0.0" y="91" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="163" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="10" y="0.0" width="280" height="43"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="lUb-ct-1zH" id="Lf3-eU-Oif">
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="License Agreement" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="i8u-9j-3N7">
-                                                    <rect key="frame" x="10" y="0.0" width="260" height="43"/>
+                                                    <rect key="frame" x="15" y="0.0" width="270" height="43"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </label>
                                             </subviews>
-                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        </view>
+                                        </tableViewCellContentView>
                                         <connections>
                                             <segue destination="7RF-kE-XWt" kind="push" id="Koz-1X-dl5"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="BTM-oT-9NN" detailTextLabel="FAK-v4-kwy" style="IBUITableViewCellStyleValue1" id="nis-4W-Px8">
-                                        <rect key="frame" x="0.0" y="135" width="320" height="45"/>
+                                        <rect key="frame" x="0.0" y="207" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="10" y="0.0" width="300" height="43"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="nis-4W-Px8" id="kLH-CK-vD3">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Version" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="BTM-oT-9NN">
-                                                    <rect key="frame" x="10" y="11" width="63" height="21"/>
+                                                    <rect key="frame" x="15" y="11" width="58" height="21"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </label>
-                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="1.3.5" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="FAK-v4-kwy">
-                                                    <rect key="frame" x="252" y="11" width="38" height="21"/>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="2.1" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="FAK-v4-kwy">
+                                                    <rect key="frame" x="281" y="11" width="24" height="21"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.21960784310000001" green="0.3294117647" blue="0.52941176469999995" alpha="1" colorSpace="calibratedRGB"/>
                                                     <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </label>
                                             </subviews>
-                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        </view>
+                                        </tableViewCellContentView>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
                             <tableViewSection headerTitle="Security" id="sDz-Zo-b38">
-                                <string key="footerTitle">Passcode is stored in keychain and if lost remains effective until the device is reset. 
+                                <string key="footerTitle">Passcode is stored in iPhone and if lost remains effective until the device is reset. 
 
 </string>
                                 <cells>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="Fjf-Zf-8T1" style="IBUITableViewCellStyleDefault" id="npT-qf-yeN">
-                                        <rect key="frame" x="0.0" y="226" width="320" height="46"/>
+                                        <rect key="frame" x="0.0" y="299" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="10" y="1" width="280" height="43"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="npT-qf-yeN" id="WLz-hn-zhr">
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Passcode" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Fjf-Zf-8T1">
-                                                    <rect key="frame" x="10" y="0.0" width="260" height="43"/>
+                                                    <rect key="frame" x="15" y="0.0" width="270" height="43"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </label>
                                             </subviews>
-                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        </view>
+                                        </tableViewCellContentView>
                                         <connections>
                                             <segue destination="n0p-KE-F9X" kind="push" id="Cbu-LA-gWA"/>
                                         </connections>
@@ -649,20 +588,24 @@
         <scene sceneID="Tsg-XY-X14">
             <objects>
                 <viewController id="Zgb-ho-RVG" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Cej-g8-RKP"/>
+                        <viewControllerLayoutGuide type="bottom" id="MYd-83-W15"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="MKj-Pf-wgJ">
-                        <rect key="frame" x="0.0" y="64" width="320" height="372"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Means_logo_About.png" translatesAutoresizingMaskIntoConstraints="NO" id="o1d-5M-VGn"/>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="42I-Co-zNR">
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Means_logo_About_v2.png" translatesAutoresizingMaskIntoConstraints="NO" id="o1d-5M-VGn">
+                                <rect key="frame" x="50" y="84" width="220" height="161"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="198" id="87H-7G-WNV"/>
-                                    <constraint firstAttribute="width" constant="299" id="aL9-Iy-Lqj"/>
+                                    <constraint firstAttribute="width" constant="220" id="jfh-c0-7Rd"/>
                                 </constraints>
-                                <string key="text">Means is a simple personal assistant that helps you maintain all of your valuable personal notes and belongings in your device. It's designed out of our hearts to offer you an extraordinary experience, thinking simple and natural. 
-
-Besides the stuff your mind keeps in private, things like a personal code or your devices' serials are always available at your fingertips.
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="42I-Co-zNR">
+                                <rect key="frame" x="10" y="253" width="299" height="227"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <string key="text">Means is a simple personal assistant to help you maintain all of your valuable personal notes and belongings in your device. It's designed out of our hearts to offer you an extraordinary experience, thinking simple and natural.
 
 Thank you for using Means.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
@@ -671,19 +614,40 @@ Thank you for using Means.</string>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="o1d-5M-VGn" firstAttribute="top" secondItem="MKj-Pf-wgJ" secondAttribute="top" constant="20" symbolic="YES" type="default" id="Hvp-D5-Wra"/>
-                            <constraint firstItem="42I-Co-zNR" firstAttribute="leading" secondItem="MKj-Pf-wgJ" secondAttribute="leading" constant="10" id="SA3-1k-ua1"/>
-                            <constraint firstItem="o1d-5M-VGn" firstAttribute="centerX" secondItem="MKj-Pf-wgJ" secondAttribute="centerX" type="default" id="d1W-cL-pfZ"/>
-                            <constraint firstItem="42I-Co-zNR" firstAttribute="bottom" secondItem="MKj-Pf-wgJ" secondAttribute="bottom" type="default" id="hWA-XJ-5Wj"/>
+                            <constraint firstAttribute="trailing" secondItem="42I-Co-zNR" secondAttribute="trailing" constant="20" symbolic="YES" id="2VE-Bf-wqh"/>
+                            <constraint firstItem="o1d-5M-VGn" firstAttribute="top" secondItem="Cej-g8-RKP" secondAttribute="bottom" constant="20" id="7zt-EC-vpn"/>
+                            <constraint firstItem="o1d-5M-VGn" firstAttribute="centerX" secondItem="MKj-Pf-wgJ" secondAttribute="centerX" id="8Yl-dK-epJ"/>
+                            <constraint firstItem="42I-Co-zNR" firstAttribute="leading" secondItem="MKj-Pf-wgJ" secondAttribute="leading" constant="20" symbolic="YES" id="EPs-RT-NFp"/>
+                            <constraint firstItem="42I-Co-zNR" firstAttribute="top" secondItem="o1d-5M-VGn" secondAttribute="bottom" constant="8" symbolic="YES" id="WVq-4V-F81"/>
+                            <constraint firstAttribute="bottom" secondItem="42I-Co-zNR" secondAttribute="bottom" id="le6-J3-7tQ"/>
                         </constraints>
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="About" id="BBv-dM-DV4"/>
-                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QnU-0Q-Qme" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1567" y="724"/>
+        </scene>
+        <!--View Controller - Item-->
+        <scene sceneID="Q3K-EB-Z3X">
+            <objects>
+                <viewController id="BxE-tJ-iwG" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vz8-b2-1mO"/>
+                        <viewControllerLayoutGuide type="bottom" id="16E-Ks-ZnS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="05g-4E-Hc5">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="OAo-gd-cvh"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4tH-G4-Zuk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="201" y="815"/>
         </scene>
         <!--Navigation Controller - Settings-->
         <scene sceneID="EE4-40-dz5">
@@ -702,25 +666,24 @@ Thank you for using Means.</string>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bi7-nv-085" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="113" y="1214"/>
+            <point key="canvasLocation" x="113" y="1766"/>
         </scene>
         <!--Passcode Settings View Controller-->
         <scene sceneID="F8p-Y8-FRB">
             <objects>
                 <tableViewController id="n0p-KE-F9X" customClass="KKPasscodeSettingsViewController" sceneMemberID="viewController">
-                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="singleLineEtched" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="pA1-gh-mtc">
-                        <rect key="frame" x="0.0" y="64" width="320" height="372"/>
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="pA1-gh-mtc">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Advanced Settings Cell" id="C6e-6p-pJL">
-                                <rect key="frame" x="0.0" y="46" width="320" height="46"/>
+                                <rect key="frame" x="0.0" y="119" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="10" y="1" width="300" height="43"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="C6e-6p-pJL" id="d0n-rO-hrj">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
-                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                </view>
+                                </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -732,37 +695,42 @@ Thank you for using Means.</string>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fHP-wv-DMJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1567" y="2023"/>
+            <point key="canvasLocation" x="1555" y="2243"/>
         </scene>
         <!--View Controller - License Agreement-->
         <scene sceneID="Gjo-dR-HJX">
             <objects>
                 <viewController id="7RF-kE-XWt" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="NMc-9k-sPm"/>
+                        <viewControllerLayoutGuide type="bottom" id="sFc-kL-4JN"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="H1R-ZI-2im">
-                        <rect key="frame" x="0.0" y="64" width="320" height="372"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ISC-ZQ-ALD">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ISC-ZQ-ALD">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <string key="text">IMPORTANT: BY USING THIS SOFTWARE, YOU ARE AGREEING TO BE BOUND BY THE FOLLOWING WORBB TERMS:
+                                <string key="text">IMPORTANT: BY USING THIS SOFTWARE, YOU ARE AGREEING TO BE BOUND BY THE FOLLOWING TERMS:
 
-Copyright 2012 Worbb. All rights reserved.
+Copyright 2013. All rights reserved.
 
 SOFTWARE LICENSE AGREEMENT FOR MEANS 
 
-PLEASE READ THIS SOFTWARE LICENSE AGREEMENT ("LICENSE") CAREFULLY BEFORE USING THE PROVIDED SOFTWARE (DEFINED BELOW). BY USING THE PROVIDED SOFTWARE, YOU ARE AGREEING TO BE BOUND BY THE TERMS OF THIS LICENSE.  IF YOU ARE ACCESSING THE PROVIDED SOFTWARE ELECTRONICALLY, SIGNIFY YOUR AGREEMENT TO BE BOUND BY THE TERMS OF THIS LICENSE BY CLICKING THE APPSTORE "BUY NOW" BUTTON.  IF YOU DO NOT AGREE TO THE TERMS OF THIS LICENSE, DO NOT USE THE PROVIDED SOFTWARE AND REMOVE IT FROM YOUR DEVICE. FOR PROVIDED SOFTWARE INCLUDED WITH YOUR PURCHASE OF HARDWARE, YOU MUST RETURN THE ENTIRE HARDWARE/SOFTWARE PACKAGE TO SELLER AND COMMUNICATE THE WHOLE DOCUMENTATION TO WORBB IN ORDER TO OBTAIN A REFUND. 
+PLEASE READ THIS SOFTWARE LICENSE AGREEMENT ("LICENSE") CAREFULLY BEFORE USING THE PROVIDED SOFTWARE (DEFINED BELOW). BY USING THE PROVIDED SOFTWARE, YOU ARE AGREEING TO BE BOUND BY THE TERMS OF THIS LICENSE.  IF YOU ARE ACCESSING THE PROVIDED SOFTWARE ELECTRONICALLY, SIGNIFY YOUR AGREEMENT TO BE BOUND BY THE TERMS OF THIS LICENSE BY CLICKING THE APPSTORE "BUY NOW" BUTTON.  IF YOU DO NOT AGREE TO THE TERMS OF THIS LICENSE, DO NOT USE THE PROVIDED SOFTWARE AND REMOVE IT FROM YOUR DEVICE. FOR PROVIDED SOFTWARE INCLUDED WITH YOUR PURCHASE OF HARDWARE, YOU MUST RETURN THE ENTIRE HARDWARE/SOFTWARE PACKAGE TO SELLER AND COMMUNICATE THE WHOLE DOCUMENTATION TO US IN ORDER TO OBTAIN A REFUND. 
 
 IMPORTANT NOTE: This software may be used to store, remove, modify, and view your own records. It is licensed to you only for reproduction, modification, publication and distribution of non-copyrighted materials, materials in which you own the copyright, or materials you are authorized or legally permitted to reproduce, modify, publish and distribute. If you are uncertain about your right to copy, modify, publish and distribute any material you should contact your legal advisor. 
-1. General. The Worbb software, tools, utilities, sample or example code, documentation, interfaces, content, data, and other materials accompanying this License, whether on disk, print or electronic documentation, in read only memory, or any other media or in any other form, (collectively, the "Provided Software") are licensed, not sold, to you by Worbb ("Worbb") for use only under the terms of this License.  Worbb and/or Worbb’s licensors retain ownership of the Provided Software itself and reserve all rights not expressly granted to you. The terms of this License will govern any software upgrades provided by Worbb that replace and/or supplement the original Provided Software, unless such upgrade is accompanied by a separate license in which case the terms of that license will govern. 
+1. General. The Means software, tools, utilities, sample or example code, documentation, interfaces, content, data, and other materials accompanying this License, whether on disk, print or electronic documentation, in read only memory, or any other media or in any other form, (collectively, the "Provided Software") are licensed, not sold, to you by Means ("Means") for use only under the terms of this License.  Means and/or Means' licensors retain ownership of the Provided Software itself and reserve all rights not expressly granted to you. The terms of this License will govern any software upgrades provided by Means that replace and/or supplement the original Provided Software, unless such upgrade is accompanied by a separate license in which case the terms of that license will govern. 
 
-Title and intellectual property rights in and to any content displayed by or accessed through the Worbb Software belongs to the respective content owner. Such content may be protected by copyright or other intellectual property laws and treaties, and may be subject to terms of use of the third party providing such content. This License does not grant you any rights to use such content nor does it guarantee that such content will continue to be available to you.
+Title and intellectual property rights in and to any content displayed by or accessed through the Means Software belongs to the respective content owner. Such content may be protected by copyright or other intellectual property laws and treaties, and may be subject to terms of use of the third party providing such content. This License does not grant you any rights to use such content nor does it guarantee that such content will continue to be available to you.
 
 2. Permitted License Uses and Restrictions.  
 A. Provided Software. Subject to the terms and conditions of this License, you are granted a limited, non-exclusive license to use the Provided Software on Apple-branded devices to store, edit and retrieve personal details. You may not make and distribute copies of the Provided Software for any reason under this License. 
 
-B. Sample Data. Certain portions of the Provided Software consist of sample or example data provided by Worbb ("Sample Data"). You may use, reproduce, modify and redistribute such Sample Code in accordance with the licensing terms accompanying such Sample Code or related project(s).
+B. Sample Data. Certain portions of the Provided Software consist of sample or example data provided by Means ("Sample Data"). You may use, reproduce, modify and redistribute such Sample Code in accordance with the licensing terms accompanying such Sample Code or related project(s).
 
-C. Use of System Provided Images. The system provided images, as defined in Provided Software, that are created and owned by Worbb ("Application Provided Images") are licensed to you solely for the purpose of using the application respectively using the Provided Software. Upon termination of this License, you may not continue to use the Application Provided Images in the Provided Software.  
+C. Use of System Provided Images. The system provided images, as defined in Provided Software, that are created and owned by Means ("Application Provided Images") are licensed to you solely for the purpose of using the application respectively using the Provided Software. Upon termination of this License, you may not continue to use the Application Provided Images in the Provided Software.  
 
 D. Location Services. Application doesn't take advantage of any location-based application programming interfaces (APIs) documented or not by Apple (“Location APIs”).  
 
@@ -776,28 +744,28 @@ I. Other Restrictions. You may not and you agree not to, or to enable others to,
 
 NFR (Not for Resale) and Evaluation Copies: Notwithstanding other sections of this License, Provided Software labeled or otherwise provided to you on a promotional basis may only be used for demonstration, testing and evaluation purposes and may not be resold or transferred. 
 
-4. Termination. This License is effective until terminated. Your rights under this License will terminate automatically or cease to be effective without notice from Worbb if you fail to comply with any term(s) of this License. In addition, Worbb reserves the right to terminate this License if a new version of Worbb's software or the Provided Software is released which is incompatible with this version of the Provided Software. Upon the termination of this License, you shall cease all use of the Provided Software and destroy all copies, full or partial, of the Provided Software. Section 5, 6, 7, 10 and 11 of this License shall survive any termination.
+4. Termination. This License is effective until terminated. Your rights under this License will terminate automatically or cease to be effective without notice from Means if you fail to comply with any term(s) of this License. In addition, Means reserves the right to terminate this License if a new version of Means' software or the Provided Software is released which is incompatible with this version of the Provided Software. Upon the termination of this License, you shall cease all use of the Provided Software and destroy all copies, full or partial, of the Provided Software. Section 5, 6, 7, 10 and 11 of this License shall survive any termination.
 
-5. Limited Warranty on Media (if any). Worbb warrants the media on which the Provided Software is recorded and delivered by Apple to be free from defects in materials and workmanship under normal use for a period of ninety (90) days from the date of original retail purchase. Your exclusive remedy under this Section shall be, at Apple’s option, a refund of the purchase price of the product containing the Provided Software or replacement of the Provided Software which is returned to Apple or an Apple authorized representative with a copy of the receipt. THIS LIMITED WARRANTY AND ANY IMPLIED WARRANTIES ON THE MEDIA INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY, OF SATISFACTORY QUALITY, AND OF FITNESS FOR A PARTICULAR PURPOSE, ARE LIMITED IN DURATION TO NINETY (90) DAYS FROM THE DATE OF ORIGINAL RETAIL PURCHASE. SOME JURISDICTIONS DO NOT ALLOW LIMITATIONS ON HOW LONG AN IMPLIED WARRANTY LASTS, SO THE ABOVE LIMITATION MAY NOT APPLY TO YOU. THE LIMITED WARRANTY SET FORTH HEREIN IS THE ONLY WARRANTY MADE TO YOU AND IS PROVIDED IN LIEU OF ANY OTHER WARRANTIES (IF ANY) CREATED BY ANY DOCUMENTATION, PACKAGING OR OTHERWISE. THIS LIMITED WARRANTY GIVES YOU SPECIFIC LEGAL RIGHTS, AND YOU MAY ALSO HAVE OTHER RIGHTS WHICH VARY BY JURISDICTION.
+5. Limited Warranty on Media (if any). Means warrants the media on which the Provided Software is recorded and delivered by Apple to be free from defects in materials and workmanship under normal use for a period of ninety (90) days from the date of original retail purchase. Your exclusive remedy under this Section shall be, at Apple’s option, a refund of the purchase price of the product containing the Provided Software or replacement of the Provided Software which is returned to Apple or an Apple authorized representative with a copy of the receipt. THIS LIMITED WARRANTY AND ANY IMPLIED WARRANTIES ON THE MEDIA INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY, OF SATISFACTORY QUALITY, AND OF FITNESS FOR A PARTICULAR PURPOSE, ARE LIMITED IN DURATION TO NINETY (90) DAYS FROM THE DATE OF ORIGINAL RETAIL PURCHASE. SOME JURISDICTIONS DO NOT ALLOW LIMITATIONS ON HOW LONG AN IMPLIED WARRANTY LASTS, SO THE ABOVE LIMITATION MAY NOT APPLY TO YOU. THE LIMITED WARRANTY SET FORTH HEREIN IS THE ONLY WARRANTY MADE TO YOU AND IS PROVIDED IN LIEU OF ANY OTHER WARRANTIES (IF ANY) CREATED BY ANY DOCUMENTATION, PACKAGING OR OTHERWISE. THIS LIMITED WARRANTY GIVES YOU SPECIFIC LEGAL RIGHTS, AND YOU MAY ALSO HAVE OTHER RIGHTS WHICH VARY BY JURISDICTION.
 
-6. Disclaimer of Warranties. YOU EXPRESSLY ACKNOWLEDGE AND AGREE THAT, TO THE EXTENT PERMITTED BY APPLICABLE LAW, USE OF THE PROVIDED SOFTWARE AND SERVICES PERFORMED BY OR THROUGH THE PROVIDED SOFTWARE (COLLECTIVELY, “SERVICES”) IS AT YOUR SOLE RISK AND THAT THE ENTIRE RISK AS TO SATISFACTORY QUALITY, PERFORMANCE, ACCURACY AND EFFORT IS WITH YOU. EXCEPT FOR THE LIMITED WARRANTY ON MEDIA SET FORTH ABOVE AND TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, THE DEVELOPER SOFTWARE AND SERVICES ARE PROVIDED "AS IS" AND “AS AVAILABLE”, WITH ALL FAULTS AND WITHOUT WARRANTY OF ANY KIND, AND WORBB AND WORBB'S LICENSORS (COLLECTIVELY REFERRED TO AS "WORBB" FOR THE PURPOSES OF SECTIONS 6 AND 7) HEREBY DISCLAIM ALL WARRANTIES AND CONDITIONS WITH RESPECT TO THE PROVIDED SOFTWARE AND SERVICES, EITHER EXPRESS, IMPLIED OR STATUTORY, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES AND/OR CONDITIONS OF MERCHANTABILITY, OF SATISFACTORY QUALITY, OF FITNESS FOR A PARTICULAR PURPOSE, OF ACCURACY, OF QUIET ENJOYMENT, AND NON-INFRINGEMENT OF THIRD PARTY RIGHTS. WORBB DOES NOT WARRANT AGAINST INTERFERENCE WITH YOUR ENJOYMENT OF THE PROVIDED SOFTWARE AND SERVICES, THAT THE FUNCTIONS CONTAINED IN, OR SERVICES PERFORMED OR PROVIDED BY, THE PROVIDED SOFTWARE WILL MEET YOUR REQUIREMENTS, THAT THE OPERATION OF THE PROVIDED SOFTWARE OR SERVICES WILL BE UNINTERRUPTED OR ERROR-FREE, THAT ANY SERVICES WILL CONTINUE TO BE MADE AVAILABLE, THAT THE PROVIDED SOFTWARE OR SERVICES WILL BE COMPATIBLE OR WORK WITH ANY THIRD PARTY SOFTWARE, APPLICATIONS OR THIRD PARTY SERVICES, OR THAT DEFECTS IN THE PROVIDED SOFTWARE OR SERVICES WILL BE CORRECTED. INSTALLATION OF THIS SOFTWARE MAY AFFECT THE USABILITY OF THIRD PARTY SOFTWARE, APPLICATIONS, OR THIRD PARTY SERVICES. YOU FURTHER ACKNOWLEDGE THAT THE PROVIDED SOFTWARE IS NOT INTENDED OR SUITABLE FOR USE IN SITUATIONS OR ENVIRONMENTS WHERE THE FAILURE OF, OR ERRORS OR INACCURACIES IN THE CONTENT, DATA OR INFORMATION PROVIDED BY, THE PROVIDED SOFTWARE OR SERVICES COULD LEAD TO DEATH, PERSONAL INJURY, OR SEVERE PHYSICAL OR ENVIRONMENTAL DAMAGE, INCLUDING WITHOUT LIMITATION THE OPERATION OF NUCLEAR FACILITIES, AIRCRAFT NAVIGATION OR COMMUNICATION SYSTEMS, AIR TRAFFIC CONTROL, LIFE SUPPORT OR WEAPONS SYSTEMS. NO ORAL OR WRITTEN INFORMATION OR ADVICE GIVEN BY WORBB OR A WORBB AUTHORIZED REPRESENTATIVE SHALL CREATE A WARRANTY. SHOULD THE PROVIDED SOFTWARE PROVE DEFECTIVE, YOU ASSUME THE ENTIRE COST OF ALL NECESSARY SERVICING, REPAIR OR CORRECTION. SOME JURISDICTIONS DO NOT ALLOW THE EXCLUSION OF IMPLIED WARRANTIES OR LIMITATIONS ON APPLICABLE STATUTORY RIGHTS OF A CONSUMER, SO THE ABOVE EXCLUSION AND LIMITATIONS MAY NOT APPLY TO YOU.  IN ADDITION, SERVICES THAT MAY BE ACCESSED FROM OR THROUGH THE PROVIDED SOFTWARE MAY NOT BE AVAILABLE IN ALL LANGUAGES OR IN ALL COUNTRIES.  WORBB MAKES NO REPRESENTATION THAT SUCH SERVICES ARE APPROPRIATE OR AVAILABLE FOR USE IN ANY PARTICULAR LOCATION.  TO THE EXTENT THAT YOU CHOOSE TO ACCESS SUCH SERVICES, YOU DO SO AT YOUR OWN INITIATIVE AND ARE RESPONSIBLE FOR COMPLIANCE WITH ANY APPLICABLE LAWS, INCLUDING, BUT NOT LIMITED TO, APPLICABLE LOCAL LAWS.  WORBB RESERVES THE RIGHT TO CHANGE, SUSPEND, REMOVE, OR DISABLE ACCESS TO ANY SERVICES AT ANY TIME WITHOUT NOTICE.  IN NO EVENT WILL WORBB BE LIABLE FOR THE REMOVAL OF OR DISABLING OF ACCESS TO ANY SUCH SERVICES.  WORBB MAY IMPOSE LIMITS ON THE USE OF OR ACCESS TO CERTAIN SERVICES, IN ANY CASE AND WITHOUT NOTICE OR LIABILITY TO YOU.
+6. Disclaimer of Warranties. YOU EXPRESSLY ACKNOWLEDGE AND AGREE THAT, TO THE EXTENT PERMITTED BY APPLICABLE LAW, USE OF THE PROVIDED SOFTWARE AND SERVICES PERFORMED BY OR THROUGH THE PROVIDED SOFTWARE (COLLECTIVELY, “SERVICES”) IS AT YOUR SOLE RISK AND THAT THE ENTIRE RISK AS TO SATISFACTORY QUALITY, PERFORMANCE, ACCURACY AND EFFORT IS WITH YOU. EXCEPT FOR THE LIMITED WARRANTY ON MEDIA SET FORTH ABOVE AND TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, THE DEVELOPER SOFTWARE AND SERVICES ARE PROVIDED "AS IS" AND “AS AVAILABLE”, WITH ALL FAULTS AND WITHOUT WARRANTY OF ANY KIND, AND MEANS AND MEANS' LICENSORS (COLLECTIVELY REFERRED TO AS "MEANS" FOR THE PURPOSES OF SECTIONS 6 AND 7) HEREBY DISCLAIM ALL WARRANTIES AND CONDITIONS WITH RESPECT TO THE PROVIDED SOFTWARE AND SERVICES, EITHER EXPRESS, IMPLIED OR STATUTORY, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES AND/OR CONDITIONS OF MERCHANTABILITY, OF SATISFACTORY QUALITY, OF FITNESS FOR A PARTICULAR PURPOSE, OF ACCURACY, OF QUIET ENJOYMENT, AND NON-INFRINGEMENT OF THIRD PARTY RIGHTS. MEANS DOES NOT WARRANT AGAINST INTERFERENCE WITH YOUR ENJOYMENT OF THE PROVIDED SOFTWARE AND SERVICES, THAT THE FUNCTIONS CONTAINED IN, OR SERVICES PERFORMED OR PROVIDED BY, THE PROVIDED SOFTWARE WILL MEET YOUR REQUIREMENTS, THAT THE OPERATION OF THE PROVIDED SOFTWARE OR SERVICES WILL BE UNINTERRUPTED OR ERROR-FREE, THAT ANY SERVICES WILL CONTINUE TO BE MADE AVAILABLE, THAT THE PROVIDED SOFTWARE OR SERVICES WILL BE COMPATIBLE OR WORK WITH ANY THIRD PARTY SOFTWARE, APPLICATIONS OR THIRD PARTY SERVICES, OR THAT DEFECTS IN THE PROVIDED SOFTWARE OR SERVICES WILL BE CORRECTED. INSTALLATION OF THIS SOFTWARE MAY AFFECT THE USABILITY OF THIRD PARTY SOFTWARE, APPLICATIONS, OR THIRD PARTY SERVICES. YOU FURTHER ACKNOWLEDGE THAT THE PROVIDED SOFTWARE IS NOT INTENDED OR SUITABLE FOR USE IN SITUATIONS OR ENVIRONMENTS WHERE THE FAILURE OF, OR ERRORS OR INACCURACIES IN THE CONTENT, DATA OR INFORMATION PROVIDED BY, THE PROVIDED SOFTWARE OR SERVICES COULD LEAD TO DEATH, PERSONAL INJURY, OR SEVERE PHYSICAL OR ENVIRONMENTAL DAMAGE, INCLUDING WITHOUT LIMITATION THE OPERATION OF NUCLEAR FACILITIES, AIRCRAFT NAVIGATION OR COMMUNICATION SYSTEMS, AIR TRAFFIC CONTROL, LIFE SUPPORT OR WEAPONS SYSTEMS. NO ORAL OR WRITTEN INFORMATION OR ADVICE GIVEN BY MEANS OR A MEANS AUTHORIZED REPRESENTATIVE SHALL CREATE A WARRANTY. SHOULD THE PROVIDED SOFTWARE PROVE DEFECTIVE, YOU ASSUME THE ENTIRE COST OF ALL NECESSARY SERVICING, REPAIR OR CORRECTION. SOME JURISDICTIONS DO NOT ALLOW THE EXCLUSION OF IMPLIED WARRANTIES OR LIMITATIONS ON APPLICABLE STATUTORY RIGHTS OF A CONSUMER, SO THE ABOVE EXCLUSION AND LIMITATIONS MAY NOT APPLY TO YOU.  IN ADDITION, SERVICES THAT MAY BE ACCESSED FROM OR THROUGH THE PROVIDED SOFTWARE MAY NOT BE AVAILABLE IN ALL LANGUAGES OR IN ALL COUNTRIES.  MEANS MAKES NO REPRESENTATION THAT SUCH SERVICES ARE APPROPRIATE OR AVAILABLE FOR USE IN ANY PARTICULAR LOCATION.  TO THE EXTENT THAT YOU CHOOSE TO ACCESS SUCH SERVICES, YOU DO SO AT YOUR OWN INITIATIVE AND ARE RESPONSIBLE FOR COMPLIANCE WITH ANY APPLICABLE LAWS, INCLUDING, BUT NOT LIMITED TO, APPLICABLE LOCAL LAWS.  MEANS RESERVES THE RIGHT TO CHANGE, SUSPEND, REMOVE, OR DISABLE ACCESS TO ANY SERVICES AT ANY TIME WITHOUT NOTICE.  IN NO EVENT WILL MEANS BE LIABLE FOR THE REMOVAL OF OR DISABLING OF ACCESS TO ANY SUCH SERVICES.  MEANS MAY IMPOSE LIMITS ON THE USE OF OR ACCESS TO CERTAIN SERVICES, IN ANY CASE AND WITHOUT NOTICE OR LIABILITY TO YOU.
 
-7. Limitation of Liability. TO THE EXTENT NOT PROHIBITED BY APPLICABLE LAW, IN NO EVENT SHALL WORBB BE LIABLE FOR PERSONAL INJURY, OR ANY INCIDENTAL, SPECIAL, INDIRECT OR CONSEQUENTIAL DAMAGES WHATSOEVER, INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF PROFITS, CORRUPTION OR LOSS OF DATA, BUSINESS INTERRUPTION OR ANY OTHER COMMERCIAL DAMAGES OR LOSSES, ARISING OUT OF OR RELATED TO YOUR USE OR INABILITY TO USE THE PROVIDED SOFTWARE AND SERVICES OR ANY THIRD PARTY SOFTWARE, APPLICATIONS, OR SERVICES IN CONJUNCTION WITH THE PROVIDED SOFTWARE, HOWEVER CAUSED, REGARDLESS OF THE THEORY OF LIABILITY (CONTRACT, TORT OR OTHERWISE) AND EVEN IF APPLE HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. SOME JURISDICTIONS DO NOT ALLOW THE LIMITATION OF LIABILITY FOR PERSONAL INJURY, OR OF INCIDENTAL OR CONSEQUENTIAL DAMAGES, SO THIS LIMITATION MAY NOT APPLY TO YOU. In no event shall Worbb's total liability to you for all damages (other than as may be required by applicable law in cases involving personal injury) exceed the amount of ten dollars ($10.00). The foregoing limitations will apply even if the above stated remedy fails of its essential purpose.
+7. Limitation of Liability. TO THE EXTENT NOT PROHIBITED BY APPLICABLE LAW, IN NO EVENT SHALL MEANS BE LIABLE FOR PERSONAL INJURY, OR ANY INCIDENTAL, SPECIAL, INDIRECT OR CONSEQUENTIAL DAMAGES WHATSOEVER, INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF PROFITS, CORRUPTION OR LOSS OF DATA, BUSINESS INTERRUPTION OR ANY OTHER COMMERCIAL DAMAGES OR LOSSES, ARISING OUT OF OR RELATED TO YOUR USE OR INABILITY TO USE THE PROVIDED SOFTWARE AND SERVICES OR ANY THIRD PARTY SOFTWARE, APPLICATIONS, OR SERVICES IN CONJUNCTION WITH THE PROVIDED SOFTWARE, HOWEVER CAUSED, REGARDLESS OF THE THEORY OF LIABILITY (CONTRACT, TORT OR OTHERWISE) AND EVEN IF APPLE HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. SOME JURISDICTIONS DO NOT ALLOW THE LIMITATION OF LIABILITY FOR PERSONAL INJURY, OR OF INCIDENTAL OR CONSEQUENTIAL DAMAGES, SO THIS LIMITATION MAY NOT APPLY TO YOU. In no event shall Means' total liability to you for all damages (other than as may be required by applicable law in cases involving personal injury) exceed the amount of one dollar ($1.00). The foregoing limitations will apply even if the above stated remedy fails of its essential purpose.
 
 8. Export Control. You may not use or otherwise export or reexport the Provided Software except as authorized by United States law and the laws of the jurisdiction(s) in which the Provided Software was obtained. In particular, but without limitation, the Provided Software may not be exported or re-exported (a) into any U.S. embargoed countries or (b) to anyone on the U.S. Treasury Department's list of Specially Designated Nationals or the U.S. Department of Commerce Denied Person's List or Entity List. By using the Provided Software, you represent and warrant that you are not located in any such country or on any such list. You also agree that you will not use the Provided Software for any purposes prohibited by United States law, including, without limitation, the development, design, manufacture or production of missiles, nuclear, chemical or biological weapons.
 
 9. Government End Users. The Provided Software and related documentation are "Commercial Items", as that term is defined at 48 C.F.R. §2.101, consisting of "Commercial Computer Software" and "Commercial Computer Software Documentation", as such terms are used in 48 C.F.R. §12.212 or 48 C.F.R. §227.7202, as applicable. Consistent with 48 C.F.R. §12.212 or 48 C.F.R. §227.7202-1 through 227.7202-4, as applicable, the Commercial Computer Software and Commercial Computer Software Documentation are being licensed to U.S. Government end users (a) only as Commercial Items and (b) with only those rights as are granted to all other end users pursuant to the terms and conditions herein. Unpublished-rights reserved under the copyright laws of the United States.
 
-10. Controlling Law and Severability. This License will be governed by and construed in accordance with the laws of the Country or State Worbb is located, excluding its conflict of law principles. This License shall not be governed by the United Nations Convention on Contracts for the International Sale of Goods, the application of which is expressly excluded. If for any reason a court of competent jurisdiction finds any provision, or portion thereof, to be unenforceable, the remainder of this License shall continue in full force and effect.  
+10. Controlling Law and Severability. This License will be governed by and construed in accordance with the laws of the Country or State Means is located, excluding its conflict of law principles. This License shall not be governed by the United Nations Convention on Contracts for the International Sale of Goods, the application of which is expressly excluded. If for any reason a court of competent jurisdiction finds any provision, or portion thereof, to be unenforceable, the remainder of this License shall continue in full force and effect.  
 
-11. Complete Agreement; Governing Language. This License constitutes the entire agreement between you and Worbb relating to the use of the Provided Software licensed hereunder and supersedes all prior or contemporaneous understandings regarding such subject matter. No amendment to or modification of this License will be binding unless in writing and signed by Worbb. Any translation of this Agreement is done for local requirements and in the event of a dispute between the English and any non-English version, the English version of this Agreement shall govern, to the extent not prohibited by local law in your jurisdiction.
+11. Complete Agreement; Governing Language. This License constitutes the entire agreement between you and Means relating to the use of the Provided Software licensed hereunder and supersedes all prior or contemporaneous understandings regarding such subject matter. No amendment to or modification of this License will be binding unless in writing and signed by Means. Any translation of this Agreement is done for local requirements and in the event of a dispute between the English and any non-English version, the English version of this Agreement shall govern, to the extent not prohibited by local law in your jurisdiction.
 
 12. Third Party Acknowledgements. 
 A. Portions of the Provided Software utilize or include third party software and other copyrighted material. Acknowledgements, licensing terms and disclaimers for such material are contained in the electronic documentation for the Provided Software or may otherwise accompany such material, and your use of such material is governed by their respective terms.
 
 B. Certain software libraries and other third party software included with the Provided Software are free software and licensed under the terms of the GNU General Public License (GPL) or the GNU Library/Lesser General Public License (LGPL), as the case may be. You may obtain a complete machine-readable copy of the source code for such free software under the terms of the GPL or LGPL, as the case may be, without charge except for the cost of media, shipping, and handling, upon written request to Apple. The GPL/LGPL software is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY, without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. A copy of the GPL and LGPL is included with the Provided Software.
 
-C. The Provided Software includes certain software licensed under the IBM Public License Version 1.0 (IPL) or the Common Public License Version 1.0 (CPL). A copy of the source code for the IPL and CPL licensed software may be found in Apple’s Open Source repository. See Apple's Open Source web site (&lt;http://www.opensource.apple.com>/) for information on how to obtain the source code. THE IPL AND CPL SOFTWARE IS PROVIDED ON AN “AS IS” BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, EITHER EXPRESS OR IMPLIED INCLUDING, WITHOUT LIMITATION, ANY WARRANTIES OR CONDITIONS OF TITLE, NON-INFRINGEMENT, MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.  NEITHER APPLE, IBM NOR ANY OTHER CONTRIBUTOR TO THE  IPL AND CPL SOFTWARE SHALL HAVE ANY LIABILITY FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, WITHOUT LIMITATION, LOST PROFITS), HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OR DISTRIBUTION OF THE IPL AND CPL SOFTWARE OR THE EXERCISE OF ANY RIGHTS GRANTED HEREUNDER, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+C. The Provided Software includes certain software licensed under the IBM Public License Version 1.0 (IPL) or the Common Public License Version 1.0 (CPL). A copy of the source code for the IPL and CPL licensed software may be found in Apple’s Open Source repository. See Apple's Open Source web site (&lt;http://www.opensource.apple.com&gt;/) for information on how to obtain the source code. THE IPL AND CPL SOFTWARE IS PROVIDED ON AN “AS IS” BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, EITHER EXPRESS OR IMPLIED INCLUDING, WITHOUT LIMITATION, ANY WARRANTIES OR CONDITIONS OF TITLE, NON-INFRINGEMENT, MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.  NEITHER APPLE, IBM NOR ANY OTHER CONTRIBUTOR TO THE  IPL AND CPL SOFTWARE SHALL HAVE ANY LIABILITY FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, WITHOUT LIMITATION, LOST PROFITS), HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OR DISTRIBUTION OF THE IPL AND CPL SOFTWARE OR THE EXERCISE OF ANY RIGHTS GRANTED HEREUNDER, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
 </string>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -805,10 +773,10 @@ C. The Provided Software includes certain software licensed under the IBM Public
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="ISC-ZQ-ALD" firstAttribute="trailing" secondItem="H1R-ZI-2im" secondAttribute="trailing" type="default" id="2rU-y7-n29"/>
-                            <constraint firstItem="ISC-ZQ-ALD" firstAttribute="top" secondItem="H1R-ZI-2im" secondAttribute="top" type="default" id="IIH-B9-ATp"/>
-                            <constraint firstItem="ISC-ZQ-ALD" firstAttribute="bottom" secondItem="H1R-ZI-2im" secondAttribute="bottom" type="default" id="Rkc-0v-I8b"/>
-                            <constraint firstItem="ISC-ZQ-ALD" firstAttribute="leading" secondItem="H1R-ZI-2im" secondAttribute="leading" type="default" id="VeN-Bk-7Vr"/>
+                            <constraint firstAttribute="trailing" secondItem="ISC-ZQ-ALD" secondAttribute="trailing" constant="20" symbolic="YES" id="MY0-vz-m6v"/>
+                            <constraint firstItem="ISC-ZQ-ALD" firstAttribute="leading" secondItem="H1R-ZI-2im" secondAttribute="leading" constant="20" symbolic="YES" id="UD1-aW-6Na"/>
+                            <constraint firstAttribute="bottom" secondItem="ISC-ZQ-ALD" secondAttribute="bottom" constant="20" symbolic="YES" id="chu-pW-aEb"/>
+                            <constraint firstItem="ISC-ZQ-ALD" firstAttribute="top" secondItem="H1R-ZI-2im" secondAttribute="top" constant="20" symbolic="YES" id="z7n-hI-PjP"/>
                         </constraints>
                     </view>
                     <toolbarItems/>
@@ -817,70 +785,15 @@ C. The Provided Software includes certain software licensed under the IBM Public
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aNn-st-4Dq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1567" y="1340"/>
+            <point key="canvasLocation" x="1539" y="1540"/>
         </scene>
     </scenes>
     <resources>
-        <image name="Groups_TabBar_v3.png" width="30" height="30"/>
-        <image name="Means_TabBar.png" width="30" height="30"/>
-        <image name="Means_logo_About.png" width="220" height="161"/>
+        <image name="Means_TabBar_v7.png" width="30" height="30"/>
+        <image name="Means_logo_About_v2.png" width="220" height="161"/>
         <image name="Settings_TabBar_v7.png" width="30" height="30"/>
     </resources>
-    <classes>
-        <class className="AddGroupTableViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/AddGroupTableViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="save:"/>
-                <relationship kind="outlet" name="groupNameTextField" candidateClass="UITextField"/>
-            </relationships>
-        </class>
-        <class className="AddMeansTableViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/AddMeansTableViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="dismissKeyboardDone:"/>
-                <relationship kind="action" name="save:"/>
-                <relationship kind="outlet" name="meansContentTextView" candidateClass="UITextView"/>
-                <relationship kind="outlet" name="meansTitleTextField" candidateClass="UITextField"/>
-            </relationships>
-        </class>
-        <class className="CoreDataTableViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/CoreDataTableViewController.h"/>
-        </class>
-        <class className="GroupDetailTableViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/GroupDetailTableViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="save:"/>
-                <relationship kind="outlet" name="groupNameTextField" candidateClass="UITextField"/>
-            </relationships>
-        </class>
-        <class className="GroupsTableViewController" superclassName="CoreDataTableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/GroupsTableViewController.h"/>
-        </class>
-        <class className="KKPasscodeSettingsViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/KKPasscodeSettingsViewController.h"/>
-        </class>
-        <class className="MeansDetailTableViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/MeansDetailTableViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="save:"/>
-                <relationship kind="outlet" name="meansContentTextView" candidateClass="UITextView"/>
-                <relationship kind="outlet" name="meansGroupTableViewCell" candidateClass="UITableViewCell"/>
-                <relationship kind="outlet" name="meansTitleTextField" candidateClass="UITextField"/>
-            </relationships>
-        </class>
-        <class className="MeansGroupTableViewController" superclassName="CoreDataTableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/MeansGroupTableViewController.h"/>
-        </class>
-        <class className="MeansTableViewController" superclassName="CoreDataTableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/MeansTableViewController.h"/>
-        </class>
-        <class className="NSLayoutConstraint" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
-        </class>
-        <class className="SettingsTableViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/SettingsTableViewController.h"/>
-        </class>
-    </classes>
+    <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

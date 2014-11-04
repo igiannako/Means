@@ -36,7 +36,7 @@
         /*
         NSArray *toRecipients = [NSArray arrayWithObjects:@"help@example.com", @"secondMail@example.com", nil];
         */
-        NSArray *toRecipients = [NSArray arrayWithObjects:@"help@worbb.com", nil];
+        NSArray *toRecipients = [NSArray arrayWithObjects:@"i@iliasg.com", nil];
         [mfViewController setToRecipients:toRecipients];
         [mfViewController setSubject:@"Hello."];
         
